@@ -87,9 +87,7 @@
 					<div>
 					</div>
                     <div class="paragraph mx-auto mt-2">
-                    Hello, I'm Peter Gyugos. I studied computer engineering at the Budapest University of Technology and Economics where I learned the foundations of programming through several coding languages. I specialised in computer graphics and created a VR game prototype in Unreal Engine for my thesis. I develop indie VR game projects and with every project, I further my understanding of gameplay programming and design tools.
-
-                    </div> 
+                    Hello, I'm Peter Gyugos. I'm a medior C++ engineer at ASML. I studied computer engineering at the Budapest University of Technology and Economics where I learned the foundations of programming through several coding languages. I specialised in computer graphics and created a VR game prototype in Unreal Engine for my thesis. I develop game projects exploring different technologies to expand on my game design pipeline. I aim to design beautiful and captivating virtual reality experiences.
                 </div>
             </div>
         </section>
@@ -114,6 +112,7 @@
 							I procedurally approach complex design processes, which makes them easily scalable, makes their elements interchangeable and can speed up development greatly.
 							During my projects, I familiarized myself with the foundations of game engines and 3d modelling and learned gameplay programming in C++, C# and blueprints.
 							For modelling, I use Houdini to algorithmically approach designing and animating meshes and environments.
+							I delved into motion capture and character animation, utulizing metahumans and creted a hand movement recording system utulizing leap motion.
 							Designing VR experiences requires a whole new approach to gameplay development.
 							In my projects, I developed a physics-based hand interaction system, which creates realistic interactivity with the environment.
 							
@@ -144,11 +143,33 @@
 						 The animation of the mushrooms and trees was done procedurally in Houdini with noise. Later, I exported the skeletal mesh-based animations as a vertex animation to run on the shader more optimally.
 						 The bridge assembly animation was an exported Houdini simulation.
 						 The hand animation during the assembly was recorded with an ultraleap and later retargeted to the hand mesh using Houdini.
+			    			 During this project I deepened my understanding in environmental design, procedural modeling, shader creation, animating meshes and creating interactive environment elements.
                     </div>
                     
                 </div>
 				<div class="col-lg-6 sec-6-right mt-lg-0 mt-5">
 				<iframe width="660" height="415" src="https://www.youtube.com/embed/lcuiywyKYQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+            </div>
+
+		<div class="row section-6-inner mx-auto mt-5">
+                <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
+                    <div class="section-6-heading">
+                        <span class="fw-bold">Motion capture character</span> Mind Elf
+                    </div>
+                    <div class="section-6-para">
+                       In this project I designed a procedural landscape, using a flow field particle simulation visualization texture for making the ground breath with life. 
+		       I made a fluid simulation in Houdini for the vulcano effects in the backround and exported the mesh animation to Unreal Engine. 
+		       The character was custom made, combining several meshes, texturing it in substance painter and rigging it in Blender. 
+		       I modified a metahuman face mesh to support motion capture with iphone. 
+		       To blend the recordeed animations I made animation retargets and animation blueprints transferring the animation data onto the skeletal mesh. 
+	 	       The aim of this project was to demonstrate visual langueage. Houidini animated effects emphasize meaning in a visual way, making the message more captivating.
+		       I aim to incorporate storytelling in my upcoming projects, utulizing what I learned here.
+                    </div>
+                    
+                </div>
+				<div class="col-lg-6 sec-6-right mt-lg-0 mt-5">
+				<iframe width="660" height="415" src="https://youtu.be/QEEu7wMCBxs?si=KLO5V7JvJkdSWjv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
             </div>
 
@@ -164,7 +185,9 @@
 						The grabbing system is physics-based also, if the player applies too much force to the object in the hand it falls out.
 						The custom hand mesh was made up of originally 1 million polygons and I managed to reduce it algorithmically to 30k.
 						To bring the hand mesh alive, I made animations and poses for it, which are blended in an Animation Blueprint.
-						For the glasses, I implemented a destruction system to be breakable.
+						For the glasses, I implemented a destruction system to make it breakable.
+			    			During this project I learned blueprint programming, prototyping gameplay systems, utulizing physics based logic in the engine.
+			    			This project serves as a VR interaction framework for future projects, giving a platform for realistic simulated experiences.
                     </div>
                     
                 </div>
@@ -172,34 +195,16 @@
 				<iframe width="660" height="415" src="https://www.youtube.com/embed/IOA8YgCFUR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
             </div>
-
-            <div class="row section-6-inner mx-auto mt-5">
-                <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
-                        <span class="fw-bold">Maze</span> VR
-                    </div>
-                    <div class="section-6-para">
-                         I created this project for my university thesis. I made a maze-generating tool which creates maps to explore in virtual reality.
-						There is a physics-based hand and interaction system for the project, with weapons and enemies and with some basic puzzle elements.
-						I made a gravity-modifying gun to interact with a larger object, animated it and implemented a projectile system, to be able to shoot.
-						I modelled the towers in the maze procedurally so their height can be adjusted with a parameter.
-						I also implemented a gravity grab function which makes it possible to grab up objects from a distance.
-                    </div>
-                    
-                </div>
-				<div class="col-lg-6 sec-6-right mt-lg-0 mt-5">
-				<iframe width="660" height="415" src="https://www.youtube.com/embed/v4DSAy2ocF0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-            </div>
-			
+	
 			<div class="row section-6-inner mx-auto mt-5">
                 <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
                     <div class="section-6-heading">
                         <span class="fw-bold">Maze generator</span> Houdini Engine
                     </div>
                     <div class="section-6-para">
-                    This video showcases the maze generator tool I created in Houdini and exposed to Unreal Engine with the help of Houdini engine. 
-					The parameters of the procedural algorithm are exposed, and can be modified in the engine.
+                    I created a procedural maze generating tool in Houdini exposing the parameters such as random seed and size of the maze. 
+		    Creating this tool I got familiar with the geometric tools used in houdini, Vex programming, exposing parameters of the logic and exporting it into Unreal. 
+		    This approach allows me to generate variations on the same theme quickly, being a strong fundation for a rouglike game with a changing environment each run.
                     </div>
                     
                 </div>
@@ -208,22 +213,6 @@
 				</div>
             </div>
 
-
-			<div class="row section-6-inner mx-auto mt-5">
-                <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
-                        <span class="fw-bold">Black knight</span> Unreal Engine
-                    </div>
-                    <div class="section-6-para">
-                        In this project, I created a third-person character logic in C++ from the ground up.
-						During this project I familiarized myself with the basics of Unreal Engine, like moving objects, colliders, handling input, class structure and inheritance, animation blueprints and blend spaces, animation notifies, state machines and basic UI design. 
-                    </div>
-                    
-                </div>
-				<div class="col-lg-6 sec-6-right mt-lg-0 mt-5">
-				<iframe width="660" height="415" src="https://www.youtube.com/embed/xbGXje_Rd-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-            </div>
 			
 			<div class="row section-6-inner mx-auto mt-5">
                 <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
@@ -239,48 +228,6 @@
 				<iframe width="660" height="415" src="https://www.youtube.com/embed/4iiioM6x0tI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
 			
-			<div class="row section-6-inner mx-auto mt-5">
-                <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
-                        <span class="fw-bold">Space Shooter</span> WebGL
-                    </div>
-                    <div class="section-6-para">
-                        This is a university project where I learned the basics of WebGL. In this project, I got to know how to use sprite animations, how to create a 2d Collider system, and how to implement a rocket which follows certain objects.
-                    </div>
-                    
-                </div>
-				<div class="col-lg-6 sec-6-right mt-lg-0 mt-5">
-				<iframe width="660" height="415" src="https://www.youtube.com/embed/qMmyPp1T4t8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			
-			<div class="row section-6-inner mx-auto mt-5">
-                <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
-                        <span class="fw-bold">Minecraft League</span> WebGL
-                    </div>
-                    <div class="section-6-para">
-                        In this webGL project, I implemented a parent-child object system, which I used to calculate the correct transforms of the wheels. I created a simple collider physics system for rolling the ball with the car. I also implemented a camera system that follows the vehicle every turn from a helicopter.
-                    </div>
-                    
-                </div>
-				<div class="col-lg-6 sec-6-right mt-lg-0 mt-5">
-				<iframe width="660" height="415" src="https://www.youtube.com/embed/PhC0ikvfnLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-				
-				<div class="row section-6-inner mx-auto mt-5">
-                <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
-                    <div class="section-6-heading">
-                        <span class="fw-bold">Space strategy</span> Unity
-                    </div>
-                    <div class="section-6-para">
-                        This Unity game project was developed during my university studies. We created this game as a team, using GitHub to log and synchronize changes. I helped in every part of the development but my main task in this project was to implement a ship movement logic.
-						During this lecture and developing the game, I got to know the basics of Unity, and how to work on a more complex project in a team setting.
-                    </div> 
-                    
-                </div>
-				<div class="col-lg-6 sec-6-right mt-lg-0 mt-5">
-				<iframe width="660" height="415" src="https://www.youtube.com/embed/xY6sRe4_vrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
 			
 			 <div class="row section-6-inner mx-auto mt-5">
                 <div class="col-lg-6 sec-6-left  pe-0 pe-lg-4">
